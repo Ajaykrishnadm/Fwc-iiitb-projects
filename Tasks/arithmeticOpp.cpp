@@ -1,3 +1,4 @@
+//code 4 arithmetic
 #include <stdio.h>
 
 void ops(int a, int b, int *c, int *d, int *e, int *f, int *g) {
