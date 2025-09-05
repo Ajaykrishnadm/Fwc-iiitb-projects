@@ -1,10 +1,9 @@
 //Code 3
 #include <stdio.h>
 void rotate(int *a, int *b, int *c) {
- int temp = *a;
 *a = *b;
 *b = *c;
-*c = temp;
+*c = *a;
 }
 int main() {
 int a = 1,b = 2, c = 3;
