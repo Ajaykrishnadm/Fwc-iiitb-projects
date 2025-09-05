@@ -6,7 +6,7 @@ void ops(int a, int b, int *c, int *d, int *e, int *f, int *g) {
 }
 
 int main() {
-    int x=15, y=6, c,d,e,f,g;
+    int x=24, y=10, c,d,e,f,g;
     ops(x,y,&c,&d,&e,&f,&g);
-    printf("Sum=%d\nDiff=%d\nProd=%d\nQuot=%d\nRem=%d\n", c,d,e,f,g);
+    printf("add=%d\nsub=%d\nmult=%d\ndiv=%d\nmod=%d\n", c,d,e,f,g);
 }
