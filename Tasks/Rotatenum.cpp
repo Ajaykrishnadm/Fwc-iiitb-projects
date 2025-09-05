@@ -7,9 +7,9 @@ void rotate(int *a, int *b, int *c) {
 *c = temp;
 }
 int main() {
-int x = 1, y = 2, z = 3;
-printf("Before:x=%d y=%d z=%d\n", x, y, z);
-rotate(&x, &y, &z);
-printf("After:x=%d y=%d z=%d\n", x, y, z);
+int a = 1,b = 2, c = 3;
+printf("Before:a=%d b=%d c=%d\n", a,b,c);
+rotate(&a, &b, &c);
+printf("After:a=%d b=%d c=%d\n", a,b,c);
 return 0;
 }
