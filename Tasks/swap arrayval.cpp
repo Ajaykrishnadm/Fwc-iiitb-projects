@@ -11,7 +11,7 @@ swap(&arr[0], &arr[1]);
 }
 // same method in the first question 
 void swap(int *a, int *b) {
-    int t = *a;
+    int x = *a;
     *a = *b;
-    *b = t;
+    *b = x;
 }
