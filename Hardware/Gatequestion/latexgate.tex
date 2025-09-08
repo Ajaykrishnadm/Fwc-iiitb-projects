@@ -1,0 +1,66 @@
+\documentclass{article}
+\usepackage{graphicx}
+\usepackage{amssymb}
+\usepackage{amsmath}
+
+\begin{document}
+
+% Section: Karnaugh Map Question (Image)
+\begin{center}
+    \includegraphics[width=0.7\textwidth]{Logo.png}
+\end{center}
+
+% Section: Arduino Code (Itemized)
+\section*{Arduino Code}
+\begin{itemize}
+  \item \texttt{\#include<Arduino.h>}
+  \item Define function: \texttt{void sevenseg(int a,int b,int c,int d,int e,int f,int g) \{}
+    \begin{itemize}
+      \item \texttt{digitalWrite(2, a);}
+      \item \texttt{digitalWrite(3, b);}
+      \item \texttt{digitalWrite(4, c);}
+      \item \texttt{digitalWrite(5, d);}
+      \item \texttt{digitalWrite(6, e);}
+      \item \texttt{digitalWrite(7, f);}
+      \item \texttt{digitalWrite(8, g);}
+    \end{itemize}
+  \item \texttt{\}}
+  \item Setup function: \texttt{void setup() \{}
+    \begin{itemize}
+      \item \texttt{pinMode(2, OUTPUT);}
+      \item \texttt{pinMode(3, OUTPUT);}
+      \item \texttt{pinMode(4, OUTPUT);}
+      \item \texttt{pinMode(5, OUTPUT);}
+      \item \texttt{pinMode(6, OUTPUT);}
+      \item \texttt{pinMode(7, OUTPUT);}
+      \item \texttt{pinMode(8, OUTPUT);}
+    \end{itemize}
+  \item \texttt{\}}
+  \item Loop function: \texttt{void loop() \{}
+    \begin{itemize}
+      \item \texttt{sevenseg(1,0,0,1,1,1,1);}
+    \end{itemize}
+  \item \texttt{\}}
+\end{itemize}
+
+% Section: Solution to Karnaugh Map
+\section*{Solution}
+The minimized expression from the K-map is:
+\[
+F = \overline{X}Y + YZ
+\]
+
+\textbf{Steps:}
+\begin{itemize}
+    \item The map represents minterms for which \( F=1 \):  
+    \( (X=0, Y=0, Z=0) \), \( (X=0, Y=0, Z=1) \), \( (X=0, Y=1, Z=1) \), and \( (X=1, Y=1, Z=1) \).
+    \item Grouping the top row, the block covers when \( X=0, Y=1 \) for any \( Z \), giving \( \overline{X}Y \).
+    \item The single cell for \( (Y=1, Z=1) \) is covered by \( YZ \).
+    \item Thus, final minimal form:  
+    \[
+    F = \overline{X}Y + YZ
+    \]
+    \item \textbf{Option (a) is correct}.
+\end{itemize}
+
+\end{document}
