@@ -5,12 +5,19 @@
 
 \begin{document}
 
-% Section: Karnaugh Map Question (Image)
-\begin{center}
-    \includegraphics[width=0.7\textwidth]{Logo.png}
-\end{center}
+\begin{minipage}{0.45\textwidth}
+  \includegraphics[width=\linewidth]{Logo.png}
+\end{minipage}
+\hfill
+\begin{minipage}{0.45\textwidth}
+  \raggedleft
+  \textbf{Name: Ajay Krishna DM} \\
+  \textbf{Id: COMETFWC037} \\
+  \textbf{Date: 1 September 2025}
+\end{minipage}
 
-% Section: Arduino Code (Itemized)
+\vspace{1cm}
+
 \section*{Arduino Code}
 \begin{itemize}
   \item \texttt{\#include<Arduino.h>}
@@ -43,24 +50,19 @@
   \item \texttt{\}}
 \end{itemize}
 
-% Section: Solution to Karnaugh Map
-\section*{Solution}
-The minimized expression from the K-map is:
+\vspace{1cm}
+
+\section*{Karnaugh Map Solution}
+The minimized function from the given K-map is:
 \[
 F = \overline{X}Y + YZ
 \]
-
-\textbf{Steps:}
+\textbf{Explanation:}
 \begin{itemize}
-    \item The map represents minterms for which \( F=1 \):  
-    \( (X=0, Y=0, Z=0) \), \( (X=0, Y=0, Z=1) \), \( (X=0, Y=1, Z=1) \), and \( (X=1, Y=1, Z=1) \).
-    \item Grouping the top row, the block covers when \( X=0, Y=1 \) for any \( Z \), giving \( \overline{X}Y \).
-    \item The single cell for \( (Y=1, Z=1) \) is covered by \( YZ \).
-    \item Thus, final minimal form:  
-    \[
-    F = \overline{X}Y + YZ
-    \]
-    \item \textbf{Option (a) is correct}.
+    \item For $X=0$, $Y=1$, the function is 1 for any value of $Z$ ($\overline{X}Y$).
+    \item For $Y=1$, $Z=1$, the function is 1 no matter the value of $X$ ($YZ$).
+    \item Thus, the minimal form is $F = \overline{X}Y + YZ$.
+    \item The correct option is \textbf{(a)}.
 \end{itemize}
 
 \end{document}
