@@ -1,9 +1,4 @@
-; === Setup ===
-; Arduino Uno pins:
-; D2 -> PD2 (7447 A)
-; D3 -> PD3 (7447 B)
-; D4 -> PD4 (7447 C)
-; D5 -> PD5 (7447 D)
+
 
 .include "m328Pdef.inc"
 
