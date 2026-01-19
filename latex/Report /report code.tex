@@ -1,0 +1,178 @@
+\documentclass[12pt,a4paper]{article}
+
+% Packages
+\usepackage[margin=1in]{geometry}
+\usepackage{setspace}
+\usepackage{fancyhdr}
+\usepackage{titlesec}
+\usepackage{xcolor}
+\usepackage{listings}
+\usepackage{hyperref}
+
+% Header & Footer
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[L]{Weekly Task Report}
+\fancyhead[R]{HTML | CSS | C Programming}
+\fancyfoot[C]{\thepage}
+
+% Section formatting
+\titleformat{\section}{\large\bfseries}{\thesection.}{0.5em}{}
+\titleformat{\subsection}{\normalsize\bfseries}{\thesubsection}{0.5em}{}
+
+% Code style
+\lstset{
+  basicstyle=\ttfamily\small,
+  keywordstyle=\color{blue},
+  commentstyle=\color{gray},
+  stringstyle=\color{red},
+  numbers=left,
+  numberstyle=\tiny,
+  frame=single,
+  breaklines=true
+}
+
+\begin{document}
+
+% Title Page
+\begin{center}
+    \textbf{\LARGE Weekly Task Report}\\[0.4cm]
+    \textbf{\large HTML, CSS \& Basic C Programming}\\[0.8cm]
+
+    \textbf{Name:} Ajay Krishna DM\\
+    \textbf{Course / Internship:} IIITB COMET Foundation\\
+\end{center}
+
+\vspace{0.5cm}
+\hrule
+\vspace{0.8cm}
+
+% Objective
+\section{Objective}
+The objective of this weekly task report is to document the learning and
+practical implementation of HTML, CSS, and Basic C Programming concepts
+covered during the last whole week.
+
+% Day 1
+\section{Day 1 – HTML Basics}
+\subsection{Topics Covered}
+\begin{itemize}
+    \item Introduction to HTML
+    \item Structure of HTML document
+    \item Headings and paragraphs
+\end{itemize}
+
+\subsection{Sample Code}
+\begin{lstlisting}[language=HTML]
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Day 1</title>
+</head>
+<body>
+    <h1>HTML Basics</h1>
+    <p>This is a simple HTML page.</p>
+</body>
+</html>
+\end{lstlisting}
+
+% Day 2
+\section{Day 2 – HTML Lists and Links}
+\subsection{Topics Covered}
+\begin{itemize}
+    \item Ordered and unordered lists
+    \item Anchor tags
+    \item Images
+\end{itemize}
+
+% Day 3
+\section{Day 3 – CSS Basics}
+\subsection{Topics Covered}
+\begin{itemize}
+    \item Inline, internal, and external CSS
+    \item Colors and fonts
+    \item Background styling
+\end{itemize}
+
+\subsection{Sample CSS Code}
+\begin{lstlisting}[language=CSS]
+body {
+    background-color: #eef2f3;
+    font-family: Arial;
+}
+h1 {
+    color: darkblue;
+}
+\end{lstlisting}
+
+% Day 4
+\section{Day 4 – CSS Box Model}
+\subsection{Topics Covered}
+\begin{itemize}
+    \item Margin, padding, and border
+    \item Width and height
+    \item Basic layout design
+\end{itemize}
+
+% Day 5
+\section{Day 5 – C Programming Basics}
+\subsection{Topics Covered}
+\begin{itemize}
+    \item Structure of C program
+    \item Variables and data types
+    \item printf and scanf
+\end{itemize}
+
+\subsection{Sample C Program}
+\begin{lstlisting}[language=C]
+#include <stdio.h>
+int main() {
+    int a;
+    printf("Enter a number: ");
+    scanf("%d", &a);
+    printf("You entered: %d", a);
+    return 0;
+}
+\end{lstlisting}
+
+% Day 6
+\section{Day 6 – C Operators and Conditions}
+\subsection{Topics Covered}
+\begin{itemize}
+    \item Arithmetic operators
+    \item if-else statements
+    \item Relational operators
+\end{itemize}
+
+% Day 7
+\section{Day 7 – Revision and Practice}
+\subsection{Activities}
+\begin{itemize}
+    \item Revised HTML and CSS concepts
+    \item Practiced basic C programs
+    \item Debugged simple errors
+\end{itemize}
+
+% Learning Outcome
+\section{Learning Outcome}
+\begin{itemize}
+    \item Understood basic web page structure using HTML
+    \item Applied styling concepts using CSS
+    \item Developed simple programs using C language
+\end{itemize}
+
+% Conclusion
+\section{Conclusion}
+The last whole week of practice strengthened my foundation in web
+development and programming concepts, preparing me for advanced topics
+in the coming weeks.
+
+\vspace{0.5cm}
+\hrule
+\vspace{0.5cm}
+
+\begin{center}
+    \textbf{--- End of Weekly Report ---}
+\end{center}
+
+\end{document}
